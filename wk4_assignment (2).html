@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <script>
+        var timerId = null;
+        var quotes = "Dogs have Owners, Cats have Staff\n" +
+            "I do not fear computers. I fear lack of them. – Isaac Asimov\n" +
+            "A computer once beat me at chess, but it was no match for me at kick boxing. – Emo Philips\n" +
+            "Computer Science is no more about computers than astronomy is about telescopes. – Edsger W. Dijkstra\n" +
+            "The computer was born to solve problems that did not exist before.” – Bill Gates\n" +
+            "Software is like entropy: It is difficult to grasp, weighs nothing, and obeys the Second Law of Thermodynamics; i.e., it always increases.   – Norman Augustine\n" +
+            "Software is a gas; it expands to fill its container. – Nathan Myhrvold\n" +
+            "All parts should go together without forcing.  You must remember that the parts you are reassembling were disassembled by you.  Therefore, if you can’t get them together again, there must be a reason.  By all means, do not use a hammer.    – IBM Manual, 1925\n" +
+            "Standards are always out of date.  That’s what makes them standards. – Alan Bennett"
+
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 8);
+        }
+
+        function getQuote(randomNumber) {
+
+            // TBD - Use the JavaScript split function to split the quotes string based on the line separator
+
+            // TBD - Use the getRandomNumber function to get a random number
+
+            // TBD return the item in the array returned from the split function indexed by the random number
+
+        }
+
+        function displayQuote() {
+            quote = getQuote();
+            document.getElementById('quoteText').innerText = quote;
+        }
+
+        function windowOnLoad() {
+            displayQuote();
+
+            if (timerId == null) {
+
+                // TBD Call the setInterval function here and set the timeout to 3 seconds
+                // Assign the result of setInterval to the variable timerId
+
+            }
+        }
+    </script>
+</head>
+
+<body onload=windowOnLoad()>
+    <h1>
+        <div id=quoteText></div>
+    </h1>
+
+</body>
+
+</html>
